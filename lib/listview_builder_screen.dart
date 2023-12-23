@@ -9,7 +9,7 @@ class ListViewScreen extends StatefulWidget {
 }
 
 class _ListViewScreenState extends State<ListViewScreen> {
-  List names = ["Ali Asad", "Ehtisham", "Mehdi", "Tariq", "Basit"];
+  List names = ["Huzaifa", "Ehtisham", "Mehdi", "Tariq", "Basit"];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -18,14 +18,13 @@ class _ListViewScreenState extends State<ListViewScreen> {
         appBar: AppBar(
           title: const Text("ListView Builder Screen"),
         ),
-
         body: ListView.builder(
-          itemCount: names.length,
+          itemCount: 5,
             itemBuilder: (context, index) {
               return kuchbhi(
                   kuchbhinaam: names[index],
-                  kuchbhitasver: "");
-            },),
+                  kuchbhitasver: '');
+            },)
       ),
     );
   }
